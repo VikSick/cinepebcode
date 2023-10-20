@@ -1,0 +1,12 @@
+//node js Q6
+function listFilesRecursively(directory) {
+  files.forEach((file) => {
+    const filePath = path.join(directory, file);
+    if (fs.statSync(filePath).isDirectory()) {
+      listFilesRecursively(filePath);
+    } else {
+            break;
+    }
+  });
+}
+
