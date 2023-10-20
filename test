@@ -15,78 +15,11 @@ server.listen(port,
 
 
 
-//node js Q2
-
-function readTextFile(filename, callback) {
-
-const filename = 'example.txt';
-readTextFile(filename, (err, data) => {
-  if (err) {
-    console.error('Error reading the file:', err);
-  } else {
-    console.log('File contents:', data);
-  }
-});
 
 
 
 
 
-
-//node js Q3
-const express = require('express')
-const port = 3000;
-app.use(express.static('public'));
-
-app.get('/', (req, res) => {
-  res.sendFile(path.join( 'public', 'index.html'));
-});
-app.listen(port, () => {
-  console.log(Server is running);
-});
-
-
-
-
-
-
-//node js Q5
-const http = require('http');
-
-const server = http.createServer((req, res) => {
-  try (req.method === 'POST') {
-    let data = '';
-        res.writeHead(200, { 'Content-Type': 'application/json' });
-      } catch (error) {
-        res.writeHead(400, { 'Content-Type': 'text/plain' });
-        res.end('Invalid JSON data');
-      }
-    });
-  } else {
-    res.writeHead(405, {text/plain});
-    res.end('Method not allowed');
-  }
-});
-
-const port = 3000;
-server.listen(port, () => {
-  console.log(`Server is running);
-});
-
-
-
-
-//node js Q6
-function listFilesRecursively(directory) {
-  files.forEach((file) => {
-    const filePath = path.join(directory, file);
-    if (fs.statSync(filePath).isDirectory()) {
-      listFilesRecursively(filePath);
-    } else {
-            break;
-    }
-  });
-}
 
 
 
