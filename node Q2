@@ -1,0 +1,18 @@
+
+//node js Q2
+
+function readTextFile(filename, callback) {
+
+const filename = 'example.txt';
+readTextFile(filename, (err, data) => {
+  if (err) {
+    console.error('Error reading the file:', err);
+  } else {
+    console.log('File contents:', data);
+  }
+});
+
+
+
+
+
